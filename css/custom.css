@@ -42,18 +42,18 @@ button {
 }
 
 .cta-green {
-    background: #00FFAD;
+    background: #ffffff;
     color: #192440;
 }
 
 .cta-green:hover {
-    color: #ffffff;
-    background: #00e69c;
+    color: #192440;
+    background: #ffffff;
 }
 
 .cta-blue {
-    background: #192440;
-    color: #ffffff;
+    background: #ffffff;
+    color: #192440;
 }
 
 .cta-blue:hover {
@@ -91,11 +91,11 @@ button {
 }
 
 #feature-first {
-    background: linear-gradient(168deg, #ffffff 55%, #00FFAD 0);
+    background: linear-gradient(168deg, #ffffff 55%, #192440 0);
 }
 
 #feature-last {
-    background: #00FFAD;
+    background: #192440;
 }
 
 /********** price table **********/
@@ -123,13 +123,13 @@ button {
 }
 
 #contact form {
-    color: #00FFAD;
+    color: #ffffff;
 }
 
 #contact form input,
 #contact form textarea {
     background: transparent;
-    border: 1px solid #00FFAD;
+    border: 1px solid #ffffff;
     color: #ffffff;
 }
 
@@ -154,7 +154,7 @@ button {
 }
 
 #copyright #social-media a:hover {
-    background: #00FFAD;
+    background: #192440;
 }
 
 #copyright #social-media a:hover i {
@@ -167,3 +167,20 @@ button {
         font-size: 3.6rem;
     }
 }
+
+#banner {
+    background-size: cover; /* Zorgt ervoor dat de afbeelding het hele element bedekt */
+    background-position: center; /* Centreert de achtergrondafbeelding */
+    background-repeat: no-repeat; /* Voorkomt dat de afbeelding wordt herhaald */
+}
+
+.menu {
+    display: flex; /* Horizontaal menu voor grotere schermen */
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Verberg het menu op kleinere schermen */
+    }
+}
+
