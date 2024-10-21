@@ -4,6 +4,10 @@ h2 {
     font-weight: 700;
 }
 
+.body {
+    overflow-x: hidden;
+}
+
 .img-fixed-size {
     width: 180px;
     height: 180px;
@@ -184,3 +188,49 @@ button {
     }
 }
 
+#banner {
+    position: relative;
+    height: 100vh; /* Of een aangepaste hoogte voor de banner */
+    background-image: url('img/Banner2.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    z-index: 1; /* Zorgt ervoor dat de banner zelf onder het ::before element ligt */
+}
+
+#banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparante witte overlay */
+    filter: blur(15px); /* Subtiele blur op de overlay */
+    z-index: 2; /* Dit zorgt ervoor dat de overlay boven de bannerafbeelding ligt */
+}
+
+.container {
+    position: relative;
+    z-index: 3; /* Zorgt ervoor dat de tekst boven de overlay komt */
+}
+
+
+#menuItems a {
+    color: #000000 !important;  /* Zwarte kleur */
+    font-weight: 700 !important; /* Dikkere tekst */
+}
+
+#banner p {
+    color: #000000 !important;  /* Zwarte kleur */
+    font-weight: 700 !important; /* Dikkere tekst */
+}
+
+#banner h1 {
+    color: #000000 !important;  /* Zwarte kleur */
+    font-weight: 900 !important; /* Extra dikke titel */
+}
+img.rounded-shadow {
+    border-radius: 20px; /* Maakt de hoeken afgerond */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Voeg een duidelijke schaduw toe */
+}
