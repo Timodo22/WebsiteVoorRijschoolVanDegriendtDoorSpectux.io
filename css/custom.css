@@ -4,8 +4,31 @@ h2 {
     font-weight: 700;
 }
 
+{
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    overflow-x: hidden; 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      overflow-x: hidden;
+    }
+  
+  
+    .container, .wrapper, .content {
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+
 .body {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .img-fixed-size {
@@ -47,17 +70,17 @@ button {
 
 .cta-green {
     background: #ffffff;
-    color: #192440;
+    color: #0090e3;
 }
 
 .cta-green:hover {
-    color: #192440;
+    color: #0090e3;
     background: #ffffff;
 }
 
 .cta-blue {
     background: #ffffff;
-    color: #192440;
+    color: #0090e3;
 }
 
 .cta-blue:hover {
@@ -66,8 +89,8 @@ button {
 }
 
 .cta-ghost {
-    border: 2px solid #192440 !important;
-    color: #192440;
+    border: 2px solid #0090e3 !important;
+    color: #0090e3;
 }
 
 .cta-ghost:hover {
@@ -95,11 +118,11 @@ button {
 }
 
 #feature-first {
-    background: linear-gradient(168deg, #ffffff 55%, #192440 0);
+    background: linear-gradient(168deg, #ffffff 55%, #0090e3 0);
 }
 
 #feature-last {
-    background: #192440;
+    background: #0090e3;
 }
 
 /********** price table **********/
@@ -109,7 +132,7 @@ button {
 }
 
 #price-table__premium {
-    background: #192440;
+    background: #0090e3;
     color: #ffffff;
 }
 
@@ -139,7 +162,7 @@ button {
 
 /********** copyright **********/
 #copyright {
-    background: #192440;
+    background: #0090e3;
     padding: 2rem 3rem;
 }
 
@@ -152,13 +175,13 @@ button {
 }
 
 #copyright #social-media a i {
-    color: #192440;
+    color: #0090e3;
     font-size: 1.2rem;
     line-height: 40px;
 }
 
 #copyright #social-media a:hover {
-    background: #192440;
+    background: #0090e3;
 }
 
 #copyright #social-media a:hover i {
@@ -205,7 +228,7 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.5); /* Semi-transparante witte overlay */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparante witte overlay */
     filter: blur(15px); /* Subtiele blur op de overlay */
     z-index: 2; /* Dit zorgt ervoor dat de overlay boven de bannerafbeelding ligt */
 }
@@ -217,17 +240,17 @@ button {
 
 
 #menuItems a {
-    color: #000000 !important;  /* Zwarte kleur */
+    color: #ffffff !important;  /* Zwarte kleur */
     font-weight: 700 !important; /* Dikkere tekst */
 }
 
 #banner p {
-    color: #000000 !important;  /* Zwarte kleur */
+    color: #ffffff !important;  /* Zwarte kleur */
     font-weight: 700 !important; /* Dikkere tekst */
 }
 
 #banner h1 {
-    color: #000000 !important;  /* Zwarte kleur */
+    color: #ffffff !important;  /* Zwarte kleur */
     font-weight: 900 !important; /* Extra dikke titel */
 }
 img.rounded-shadow {
